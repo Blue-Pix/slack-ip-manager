@@ -1,0 +1,4 @@
+#set($raw = $input.body)
+#set($payload = $raw.replace("payload=",""))
+#set($jsonPayload = $util.urlDecode($payload))
+$jsonPayload
